@@ -1,4 +1,16 @@
 ShareMergeLib
 =============
+ 
+#### Warning
+> My private frameworks,so don't download!
 
-My private frameworks,so don't download! Thank you.
+
+#### Use
+* My private project
+* My company project
+
+#### Contact
+* huangxp@iiseeuu.com
+* 1260978307
+
+
