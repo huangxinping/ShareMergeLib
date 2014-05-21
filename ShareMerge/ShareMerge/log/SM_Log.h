@@ -1,10 +1,15 @@
-//
-//  SM_Debug.h
-//  ShareMerge
-//
-//  Created by huangxp on 13-8-4.
-//  Copyright (c) 2013年 hxp. All rights reserved.
-//
+/**
+ *  SM_Log.h
+ *  ShareMerge
+ *
+ *  Created by huangxp on 2014-05-31.
+ *
+ *  log配置
+ *
+ *  Copyright (c) www.sharemerge.com All rights reserved.
+ */
+
+/** @file */    // Doxygen marker
 
 #ifndef ShareMerge_SM_Debug_h
 #define ShareMerge_SM_Debug_h
@@ -15,7 +20,7 @@
 #endif
 
 #if SM_OPEN_DEVELOP
-    
+
 #endif
 
 #endif

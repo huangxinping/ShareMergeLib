@@ -35,7 +35,7 @@ typedef void (^SMAlertViewButtonCallback)(NSInteger buttonIndex);
  *	@param cancenButtonTitle 取消按钮及其他
  *
  */
-+ (void)showWithTitle:(NSString *)title message:(NSString *)message block:(SMAlertViewButtonCallback)inBlock cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...NS_REQUIRES_NIL_TERMINATION;
++ (void)alertViewWithTitle:(NSString *)title message:(NSString *)message block:(SMAlertViewButtonCallback)inBlock cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...NS_REQUIRES_NIL_TERMINATION;
 
 /**
  *	@brief 创建一个block类型的AlertView
@@ -46,7 +46,7 @@ typedef void (^SMAlertViewButtonCallback)(NSInteger buttonIndex);
  *	@param buttonTitle  按钮标题
  *
  */
-+ (void)showSimpleWithTitle:(NSString *)title message:(NSString *)message block:(SMAlertViewButtonCallback)inBlock buttonTitle:(NSString *)buttonTitle;
++ (void)alertViewWithTitle:(NSString *)title message:(NSString *)message block:(SMAlertViewButtonCallback)inBlock buttonTitle:(NSString *)buttonTitle;
 
 /**
  *	@brief 创建一个block类型的AlertView
@@ -56,7 +56,7 @@ typedef void (^SMAlertViewButtonCallback)(NSInteger buttonIndex);
  *	@param inBlock block
  *
  */
-+ (void)showSimpleWithTitle:(NSString *)title message:(NSString *)message block:(SMAlertViewButtonCallback)inBlock;
++ (void)alertViewWithTitle:(NSString *)title message:(NSString *)message block:(SMAlertViewButtonCallback)inBlock;
 
 @end
 

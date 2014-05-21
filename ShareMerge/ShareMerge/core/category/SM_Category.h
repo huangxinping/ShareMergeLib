@@ -14,6 +14,9 @@
 #ifndef ShareMerge_SM_Category_h
 #define ShareMerge_SM_Category_h
 
+/* blocks - protocol */
+#import <SM_BlocksProtocol.h>
+
 /* data - block */
 #import <NSArray+block.h>
 #import <NSDictionary+block.h>
