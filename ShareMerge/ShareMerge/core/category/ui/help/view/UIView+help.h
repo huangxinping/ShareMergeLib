@@ -81,7 +81,7 @@
  *  @return             超视图数组
  *
  */
-- (NSArray *)superViews;
+- (NSArray *)allSuperviews;
 
 /**
  *  @brief  第一个超视图，strict=NO（strict：严格）
@@ -143,7 +143,26 @@
  *
  */
 - (void)setDebug:(BOOL)debug;
- 
+
+/**
+ *  @brief  打印层次结构
+ */
+- (NSString *)displayViews;
+
+/**
+ *  @brief  所有的子视图，含子视图的子视图
+ *
+ *  @return 视图数组
+ */
+- (NSArray *)allSubviews;
+
+/**
+ *  @brief  从window一直到该视图的层次结果
+ *
+ *  @return 层次结构视图
+ */
+- (NSArray *)pathToView;
+
 /**
  *	@brief 圆角
  *

@@ -222,4 +222,14 @@
  */
 - (unsigned long long)unsignedLongLongValue;
 
+/**
+ *  计算文本高度
+ *
+ *  @param font          字体
+ *  @param maxSize       最大尺寸
+ *  @param linebreakMode 换行标识
+ *
+ *  @return 尺寸
+ */
+- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize andLinebreakMode:(NSLineBreakMode)linebreakMode;
 @end

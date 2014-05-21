@@ -15,7 +15,7 @@
 #define ShareMerge_SMHTTPRequestDelegate_h
 
 @class SMHTTPRequest;
-@protocol SMHTTPRequest <NSObject>
+@protocol SMHTTPRequestDelegate <NSObject>
 @optional
 /**
  *	@brief 请求开始

@@ -9,7 +9,7 @@
  *  Copyright (c) www.sharemerge.com. All rights reserved.
  */
 
-/** @file */	// Doxygen marker
+/** @file */    // Doxygen marker
 
 #ifndef ShareMerge_SM_Tool_h
 #define ShareMerge_SM_Tool_h
@@ -31,12 +31,17 @@
 
 /**************设计模式**************/
 #import "designpattern/ShareInstance.h"
+#import "designpattern/ShareGenerics.h"
 /**************设计模式**************/
 
 /**************缓存**************/
 #import "cache/SMURLCache.h"
 #import "cache/SMImageCache.h"
 /**************缓存**************/
+
+/**************设备管家**************/
+#import "device/SMDeviceManager.h"
+/**************设备管家**************/
 
 /**************异步下载**************/
 #import "download/SMAsyncDownload.h"
@@ -51,7 +56,11 @@
 
 /**************文件处理**************/
 #import "file/SMLanguageManager.h"
-//#import "file/SMZipArchive.h"
 /**************文件处理**************/
 
-#endif
+/**************其他**************/
+#import "other/SMOther.h"
+#import "other/SMOther+architecture.h"
+/**************其他**************/
+
+#endif /* ifndef ShareMerge_SM_Tool_h */

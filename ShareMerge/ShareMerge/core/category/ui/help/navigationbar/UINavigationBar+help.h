@@ -26,20 +26,6 @@
 - (void)showBottomHairline;
 
 /**
- *  设置标题颜色
- *
- *  @param color 颜色
- */
-- (void)setTitleColor:(UIColor *)color;
-
-/**
- *  设置标题字体
- *
- *  @param font 字体
- */
-- (void)setTitleFont:(UIFont *)font;
-
-/**
  *  设置背景颜色
  *
  *  @param color 颜色

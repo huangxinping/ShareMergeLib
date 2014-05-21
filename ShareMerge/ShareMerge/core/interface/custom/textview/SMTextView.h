@@ -9,9 +9,10 @@
  *  Copyright (c) www.sharemerge.com. All rights reserved.
  */
 
-/** @file */	// Doxygen marker
+/** @file */    // Doxygen marker
 
 #import <UIKit/UIKit.h>
+#import "ShareInstance.h"
 
 @interface SMTextView : UITextView
 {
@@ -21,10 +22,10 @@
 }
 
 /** placeholder文字信息 */
-@property(nonatomic,copy)NSString *placeholderText;
+@property (nonatomic, copy) NSString *placeholderText;
 
 /** placeholder文字颜色 */
-@property(nonatomic,retain)UIColor *placeholderColor;
+@property (nonatomic, SM_PROPERTY_RETAIN) UIColor *placeholderColor UI_APPEARANCE_SELECTOR;
 
 /**
  *  @brief  设置光标到结尾

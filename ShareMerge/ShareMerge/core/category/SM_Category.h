@@ -46,6 +46,7 @@
 /* ui - block */
 #import <UIAlertView+block.h>
 #import <UIView+block.h>
+#import <UIControl+block.h>
 
 /* ui - help */
 #import <UIApplication+help.h>

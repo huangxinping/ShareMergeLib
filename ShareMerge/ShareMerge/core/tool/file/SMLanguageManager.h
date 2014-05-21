@@ -57,17 +57,6 @@
 #define kSMJapanese             @"ja"        // 日文
 #define kSMSpanish              @"es"         // 西班牙文
 
-typedef enum
-{
-    SMLanguageUnkown,
-    SMDefaultLanguage,
-    SMChinese_Sim,
-    SMChinese,
-    SMEnglish,
-    SMJapanese,
-    SMSpanish,
-}SMLanguageType;
-
 @interface SMLanguageManager : NSObject
 
 /**

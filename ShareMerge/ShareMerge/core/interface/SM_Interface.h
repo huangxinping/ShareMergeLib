@@ -9,7 +9,7 @@
  *  Copyright (c) www.sharemerge.com. All rights reserved.
  */
 
-/** @file */	// Doxygen marker
+/** @file */    // Doxygen marker
 
 #ifndef ShareMerge_SM_Interface_h
 #define ShareMerge_SM_Interface_h
@@ -18,8 +18,10 @@
 #import "custom/toast/SMToast.h"
 #import "custom/sidevc/SMSideViewController.h"
 #import "custom/textview/SMTextView.h"
+#import "custom/slidevc/SMSlideViewController.h"
+#import "custom/scrollimageview/SMImageScrollView.h"
+#import "custom/jswebview/SMJavaScriptWebView.h"
 #import "subclass/SMRefreshControl.h"
 #import "subclass/SMUnderlineLabel.h"
-#import "custom/openflow/SMOpenFlowView.h"
 
 #endif

@@ -16,7 +16,7 @@
 #import <SystemConfiguration/SCNetworkReachability.h>
 #import <CoreLocation/CoreLocation.h>
 
-#define IS_CONNECTED_NETWORK [UIDevice connectedToNetwork]
+#define IS_CONNECTED_NETWORK   [UIDevice connectedToNetwork]
 #define IS_UNCONNECTED_NETWORK !IS_CONNECTED_NETWORK
 
 @interface UIDevice (help)
@@ -131,11 +131,95 @@
 + (BOOL)cameraSupported;
 
 /**
+ *  @brief  是否支持相册
+ *
+ *  @return 是否支持
+ */
++ (BOOL)photoLibrarySupported;
+
+/**
+ *  @brief  是否支持相簿
+ *
+ *  @return 是否支持
+ */
++ (BOOL)photoAlbumSupported;
+
+/**
+ *  @brief  是否支持闪光灯
+ *
+ *  @return 是否支持
+ */
++ (BOOL)flashSupported;
+
+/**
+ *  @brief  是否支持前置摄像头
+ *
+ *  @return 是否支持
+ */
++ (BOOL)frontCameraSupported;
+
+/**
+ *  @brief  是否支持拍摄视频
+ *
+ *  @return 是否支持
+ */
++ (BOOL)videoCameraSupported;
+
+/**
  *  @brief  是否支持指南针
  *
  *  @return 是否支持
  */
 + (BOOL)compassSupported;
+
+/**
+ *  @brief  是否支持陀螺仪
+ *
+ *  @return 是否支持
+ */
++ (BOOL)gyroscopeSupported;
+
+/**
+ *  @brief  是否支持麦克风
+ *
+ *  @return 是否支持
+ */
++ (BOOL)microphoneSupported;
+
+/**
+ *  @brief  是否支持retina显示
+ *
+ *  @return 是否支持
+ */
++ (BOOL)retinaDisplaySupported;
+
+/**
+ *  @brief  是否支持后台
+ *
+ *  @return 是否支持
+ */
++ (BOOL)multitaskingSupported;
+
+/**
+ *  @brief  是否支持打电话
+ *
+ *  @return 是否支持
+ */
++ (BOOL)phoneCallSupported;
+
+/**
+ *  @brief  是否支持发送短信
+ *
+ *  @return 是否支持
+ */
++ (BOOL)sendSMSSupported;
+
+/**
+ *  @brief  是否支持发送邮件
+ *
+ *  @return 是否支持
+ */
++ (BOOL)sendEmailSupported;
 
 /**
  *  @brief  是否设备版本匹配参数version
@@ -181,5 +265,47 @@
  *  @return 是否匹配
  */
 + (BOOL)systemVersionLessThanAndEqualTo:(NSString *)version;
+
+/**
+ *  @brief  活动内存
+ *
+ *  @return 大小
+ */
++ (uint64_t)activeMemory;
+
+/**
+ *  @brief  非活动内存
+ *
+ *  @return 大小
+ */
++ (uint64_t)inactiveMemory;
+
+/**
+ *  @brief  冻结内存
+ *
+ *  @return 大小
+ */
++ (uint64_t)wiredMemory;
+
+/**
+ *  @brief  自由内存
+ *
+ *  @return 大小
+ */
++ (uint64_t)freeMemory;
+
+/**
+ *  @brief  被使用的内存
+ *
+ *  @return 大小
+ */
++ (uint64_t)usedMemory;
+
+/**
+ *  @brief  总共内存
+ *
+ *  @return 大小
+ */
++ (uint64_t)totalMemory;
 
 @end

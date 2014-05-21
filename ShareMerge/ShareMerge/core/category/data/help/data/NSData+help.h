@@ -67,18 +67,10 @@
 - (NSData *)aesDecryptWithKey:(NSString *)key initialVector:(NSString *)iv;
 
 /**
- *  @brief  从base64编码的字符串转换成data
+ *  GB18030转码
  *
- *  @param  string  base64编码字符串
- *
- *  @return         解码后的NSData
+ *  @return GB18030编码字符串
  */
-+ (NSData *)dataFromBase64String:(NSString *)string;
+- (NSString *)GB18030String;
 
-/**
- *  @brief  base64编码
- *
- *  @return         base64后的字符串
- */
-- (NSString *)base64EncodedString;
 @end

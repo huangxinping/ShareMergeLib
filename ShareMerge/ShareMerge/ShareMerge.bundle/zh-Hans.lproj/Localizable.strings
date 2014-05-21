@@ -1,15 +1,15 @@
-/* 
-  File.strings
-  ShareMerge
+/*
+   File.strings
+   ShareMerge
 
-  Created by huangxp on 13-8-14.
-  Copyright (c) 2013年 hxp. All rights reserved.
-*/
+   Created by huangxp on 13-8-14.
+   Copyright (c) 2013年 hxp. All rights reserved.
+ */
 
-"Network error" = "网络未连接或异常";
+"Network error"         = "网络未连接或异常";
 "Activity selfdom text" = "努力加载中";
-"Activity text" = "请稍等";
-"Activity Retry" = "重试";
-"Activity Cancel" = "取消";
-"Request failed" = "请求失败";
-"Request retry" = "是否重新请求";
+"Activity text"         = "请稍等";
+"Activity Retry"        = "重试";
+"Activity Cancel"       = "取消";
+"Request failed"        = "请求失败";
+"Request retry"         = "是否重新请求";

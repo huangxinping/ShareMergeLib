@@ -32,7 +32,7 @@ typedef void (^SMBasicBlock)(void);
 #endif
 }
 
-@property (nonatomic, SM_PROPERTY_ASSIGN) id <SMHTTPRequest> delegate;
+@property (nonatomic, SM_PROPERTY_ASSIGN) id <SMHTTPRequestDelegate> delegate;
 @property (nonatomic, assign) int tag;
 @property (nonatomic, SM_PROPERTY_RETAIN) NSURL *url;
 @property (nonatomic, assign) int responseStatusCode;

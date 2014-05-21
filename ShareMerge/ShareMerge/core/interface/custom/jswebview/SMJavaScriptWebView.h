@@ -1,5 +1,5 @@
 /**
- *  SMJavaScriptWebView.h
+ *  SGJavaScriptWebView.h
  *  ShareGlobal
  *
  *  Created by huangxp on 13-3-20.
