@@ -20,7 +20,7 @@
 #import "custom/textview/SMTextView.h"
 #import "custom/slidevc/SMSlideViewController.h"
 #import "custom/scrollimageview/SMImageScrollView.h"
-#import "custom/jswebview/SMJavaScriptWebView.h"
+#import "custom/webview/SMWebView.h"
 #import "subclass/SMRefreshControl.h"
 #import "subclass/SMUnderlineLabel.h"
 

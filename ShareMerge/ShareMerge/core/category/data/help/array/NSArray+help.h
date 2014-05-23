@@ -50,4 +50,11 @@
  */
 - (NSArray *)reverseArray;
 
+/**
+ *  是否有某个元素
+ *
+ *  @return 是否有
+ */
+- (BOOL)hasElement:(id)element;
+
 @end
