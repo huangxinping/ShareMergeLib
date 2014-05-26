@@ -50,6 +50,8 @@
 #import <UIAlertView+block.h>
 #import <UIView+block.h>
 #import <UIControl+block.h>
+#import <UIActionSheet+block.h>
+#import <UIPopoverController+block.h>
 
 /* ui - help */
 #import <UIApplication+help.h>
