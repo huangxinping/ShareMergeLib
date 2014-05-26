@@ -62,6 +62,24 @@
 - (id)initWithDatabase:(NSString *)database andTable:(NSString *)table;
 
 /**
+ *  设置加密键
+ *
+ *  @param key 加密键
+ *
+ *  @return 成功设置则返回YES
+ */
+- (BOOL)setKey:(NSString *)key;
+
+/**
+ *  重新设置加密键
+ *
+ *  @param key 加密键
+ *
+ *  @return 成功设置则返回YES
+ */
+- (BOOL)reKey:(NSString *)key;
+
+/**
  *	@brief 开启事务
  *
  *
