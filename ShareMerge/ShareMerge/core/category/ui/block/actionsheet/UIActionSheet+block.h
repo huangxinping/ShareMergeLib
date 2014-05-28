@@ -27,6 +27,7 @@
 + (void)actionSheetWithTitle:(NSString *)title
                      message:(NSString *)message
       destructiveButtonTitle:(NSString *)destructiveButtonTitle
+           cancelButtonTitle:(NSString *)cancelButtonTitle
                      buttons:(NSArray *)buttonTitles
                   showInView:(UIView *)view
                    onDismiss:(DismissBlock)dismissed
