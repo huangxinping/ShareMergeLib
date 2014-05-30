@@ -16,19 +16,32 @@
 
 /* 是否ARC可用 */
 #if __has_feature(objc_arc)
-    #define HAS_ARC   1
+    #define HAS_ARC           1
 #endif
 
 /* 是否block可用 */
 #if NS_BLOCKS_AVAILABLE
-    #define HAS_BLOCK 1
+    #define HAS_BLOCK         1
 #endif
 
 /* 输出 */
 #ifdef DEBUG
 #define SMLog(...)                 do { printf("\n\n------------------------------ShareMerge------------------------------\n"); printf("文件：%s\n函数：%s\n行号：%u\n", __FILE__, __FUNCTION__, __LINE__); NSLog(__VA_ARGS__); printf("------------------------------ShareMerge------------------------------\n\n"); } while (0)
+
+#define XCODE_COLORS_ESCAPE   @"\033["
+#define XCODE_COLORS_RESET_FG XCODE_COLORS_ESCAPE @"fg;"  // Clear any foreground color
+#define XCODE_COLORS_RESET_BG XCODE_COLORS_ESCAPE @"bg;"  // Clear any background color
+#define XCODE_COLORS_RESET    XCODE_COLORS_ESCAPE @";"    // Clear any foreground or background color
+#define SMLogError(...)            do { printf("\n\n------------------------------ShareMerge------------------------------\n"); printf("文件：%s\n函数：%s\n行号：%u\n", __FILE__, __FUNCTION__, __LINE__); NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ## __VA_ARGS__); printf("------------------------------ShareMerge------------------------------\n\n"); } while (0)
+#define SMLogWarn(...)             do { printf("\n\n------------------------------ShareMerge------------------------------\n"); printf("文件：%s\n函数：%s\n行号：%u\n", __FILE__, __FUNCTION__, __LINE__); NSLog((XCODE_COLORS_ESCAPE @"fg245,245,0;" frmt XCODE_COLORS_RESET), ## __VA_ARGS__); printf("------------------------------ShareMerge------------------------------\n\n"); } while (0)
+#define SMLogInfo(...)             do { printf("\n\n------------------------------ShareMerge------------------------------\n"); printf("文件：%s\n函数：%s\n行号：%u\n", __FILE__, __FUNCTION__, __LINE__); NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ## __VA_ARGS__); printf("------------------------------ShareMerge------------------------------\n\n"); } while (0)
+#define SMLogVerbose(...)          do { printf("\n\n------------------------------ShareMerge------------------------------\n"); printf("文件：%s\n函数：%s\n行号：%u\n", __FILE__, __FUNCTION__, __LINE__); NSLog((XCODE_COLORS_ESCAPE @"fg0,255,0;" frmt XCODE_COLORS_RESET), ## __VA_ARGS__); printf("------------------------------ShareMerge------------------------------\n\n"); } while (0)
 #else
 #define SMLog(...)                 do {} while (0)
+#define SMLogError(...)            do {} while (0)
+#define SMLogWarn(...)             do {} while (0)
+#define SMLogInfo(...)             do {} while (0)
+#define SMLogVerbose(...)          do {} while (0)
 #endif
 
 /* 安全释放 */
